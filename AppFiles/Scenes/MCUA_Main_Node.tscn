@@ -1,3 +1,18 @@
 [gd_scene format=2]
 
 [node name="MCUA_Main_Node" type="Node"]
+
+[node name="Art_Stuff" type="Node" parent="."]
+
+[node name="Camera" type="Camera" parent="Art_Stuff"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, -1, 0 )
+fov = 155.197
+
+[node name="Panel" type="Panel" parent="Art_Stuff/Camera"]
+margin_left = 606.013
+margin_top = 271.223
+margin_right = 1265.01
+margin_bottom = 756.223
+__meta__ = {
+"_edit_use_anchors_": false
+}
