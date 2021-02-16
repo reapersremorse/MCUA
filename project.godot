@@ -16,13 +16,10 @@ _global_script_class_icons={
 [application]
 
 config/name="MCUA"
+run/main_scene="res://AppFiles/GlobalAssets/MCUA_Main_NODE.tscn"
 config/icon="res://icon.png"
 
 [display]
 
 window/size/width=1920
 window/size/height=1080
-
-[rendering]
-
-environment/default_environment="res://AppFiles/default_env.tres"
