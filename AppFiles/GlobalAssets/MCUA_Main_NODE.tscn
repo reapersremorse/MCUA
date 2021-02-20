@@ -3,3 +3,30 @@
 [node name="MCUA_Main_NODE" type="Node"]
 
 [node name="Global" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Global"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 211.0
+margin_bottom = 106.0
+text = "<AppName>
+Version: <Version>
+Minecraft Version: <MCVersion>
+Project Name: <ProjectFolder>
+IDK: <>
+ "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UI_Main" type="Control" parent="Global"]
+margin_left = -0.5
+margin_right = 1919.5
+margin_bottom = 1080.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator" type="HSeparator" parent="Global/UI_Main"]
+margin_right = 1920.0
+margin_bottom = 1080.0
