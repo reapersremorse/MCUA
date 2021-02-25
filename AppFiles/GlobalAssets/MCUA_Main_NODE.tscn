@@ -4,29 +4,76 @@
 
 [node name="Global" type="Node" parent="."]
 
-[node name="Label" type="Label" parent="Global"]
-margin_left = 7.0
-margin_top = 7.0
-margin_right = 211.0
-margin_bottom = 106.0
-text = "<AppName>
-Version: <Version>
-Minecraft Version: <MCVersion>
-Project Name: <ProjectFolder>
-IDK: <>
- "
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="UI_Main" type="Control" parent="Global"]
-margin_left = -0.5
-margin_right = 1919.5
-margin_bottom = 1080.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="HSeparator" type="HSeparator" parent="Global/UI_Main"]
+[node name="BackGroundMain" type="ColorRect" parent="Global"]
 margin_right = 1920.0
 margin_bottom = 1080.0
+color = Color( 0.501961, 0.501961, 0.501961, 0.501961 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackGroundButtonsMenu" type="ColorRect" parent="Global/BackGroundMain"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 1810.0
+margin_bottom = 110.0
+rect_pivot_offset = Vector2( 1165.42, 50 )
+color = Color( 0.501961, 0.501961, 0.501961, 0.501961 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackGroundButtonsFunctions" type="ColorRect" parent="Global/BackGroundMain"]
+margin_left = 1820.0
+margin_top = 10.0
+margin_right = 1910.0
+margin_bottom = 110.0
+rect_pivot_offset = Vector2( 1165.42, 50 )
+color = Color( 0.501961, 0.501961, 0.501961, 0.501961 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CloseAppButton" type="Button" parent="Global/BackGroundMain/BackGroundButtonsFunctions"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 23.8821
+margin_bottom = 24.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MinimizeAppButton" type="Button" parent="Global/BackGroundMain/BackGroundButtonsFunctions"]
+margin_left = 28.0
+margin_top = 4.0
+margin_right = 48.0
+margin_bottom = 24.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MinMaxAppButton" type="Button" parent="Global/BackGroundMain/BackGroundButtonsFunctions"]
+margin_left = 52.0
+margin_top = 4.0
+margin_right = 72.0
+margin_bottom = 24.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackGroundInspector" type="ColorRect" parent="Global/BackGroundMain"]
+margin_left = 10.0
+margin_top = 120.0
+margin_right = 310.0
+margin_bottom = 1070.0
+color = Color( 0.501961, 0.501961, 0.501961, 0.501961 )
+
+[node name="BackGroundScene" type="ColorRect" parent="Global/BackGroundMain"]
+margin_left = 320.0
+margin_top = 120.0
+margin_right = 1910.0
+margin_bottom = 1070.0
+color = Color( 0.501961, 0.501961, 0.501961, 0.501961 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
